@@ -1,0 +1,19 @@
+MAIN:
+        "Enter number: "
+        puts
+        1
+        getn
+        dup
+        cgz FACT
+        pop
+        putn
+
+FACT:
+        dup
+        swx
+        *
+        swp
+        1
+        -
+        dup
+        cgz FACT

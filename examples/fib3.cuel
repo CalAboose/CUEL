@@ -1,0 +1,21 @@
+MAIN:
+        "Enter number: "
+        puts
+        0
+        1
+        getn
+        dup
+        cgz FIB
+        swx
+        putn
+
+FIB:
+        rcw
+        dup
+        swx
+        +
+        rcc
+        1
+        -
+        dup
+        cnz FIB

@@ -1,0 +1,120 @@
+MAIN:
+        "40631883-251123780110\n"
+        puts
+        cal TEST-PLS
+        cal TEST-MIN
+        cal TEST-MUL
+        cal TEST-DIV
+        cal TEST-MOD
+        cal TEST-DUP
+        cal TEST-POP
+        cal TEST-NEG
+        cal TEST-SWP
+        cal TEST-SWX
+        cal TEST-RCW
+        cal TEST-RCC
+        1
+        caz TEST-CALL1
+        0
+        caz TEST-CALL0
+        1
+        cnz TEST-CALL1
+        0
+        cnz TEST-CALL0
+        1
+        cgz TEST-CALL1
+        1
+        neg
+        cgz TEST-CALL0
+        1
+        clz TEST-CALL1
+        1
+        neg
+        clz TEST-CALL0
+        "\nEnter number:\n"
+        puts
+        getn
+        putn
+        "\nTest OK."
+        puts
+
+TEST-PLS:
+        2
+        2
+        +
+        putn
+
+TEST-MIN:
+        2
+        2
+        -
+        putn
+
+TEST-MUL:
+        3
+        2
+        *
+        putn
+
+TEST-DIV:
+        7
+        2
+        /
+        putn
+
+TEST-MOD:
+        7
+        2
+        %
+        putn
+
+TEST-DUP:
+        8
+        dup
+        putn
+        putn
+
+TEST-POP:
+        3
+        9
+        pop
+        putn
+
+TEST-NEG:
+        2
+        neg
+        putn
+
+TEST-SWP:
+        5
+        1
+        swp
+        putn
+        putn
+
+TEST-SWX:
+        1
+        2
+        3
+        swx
+        putn
+        putn
+        putn
+
+TEST-RCW:
+        7
+        rcw
+        putn
+
+TEST-RCC:
+        8
+        rcc
+        putn
+
+TEST-CALL1:
+        1
+        putn
+
+TEST-CALL0:
+        0
+        putn
